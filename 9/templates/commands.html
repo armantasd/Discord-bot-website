@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Commands</title>
+{% endblock %}
+
+{% block content %}
+<h1>Those are the avalable commands: </h1>
+<form action="#" method="post">
+    <p>If user says: <input type="text" name="hello_cmd" value="{{commands["Hello"]}}">, then execute "Hello" command
+        (bot introduces itself)</p>
+    <p>If user says: <input type="text" name="Rand_cmd" value="{{commands["Random_num"]}}">, then execute "Random_num"
+        command (tells random number between 1 - 10)</p>
+    <p>If user says: <input type="text" name="Date_cmd" value="{{commands["Date"]}}">, then execute "Date" command
+        (displays the current date and time)</p>
+    <input type="submit" name="Update" value="Update" class="button">
+</form>
+{% endblock %}

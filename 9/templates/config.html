@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Configuration</title>
+{% endblock %}
+
+{% block content %}
+<h1>This is your configuration.</h1>
+<form action="#" method="post">
+    <p>Command prefix: <input type="text" name="cmd_prefix" value="{{config["command_prefix"]}}"></p>
+    <p>Replace username keyword: <input type="text" name="user_replace" value="{{config["user_replace"]}}"></p>
+    <p>Replace bot name keyword: <input type="text" name="bot_replace" value="{{config["bot_replace"]}}"></p>
+    <input type="submit" name="Update" value="Update" class="button">
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Responces</title>
+{% endblock %}
+
+{% block content %}
+<h1>This is your bot's responces.</h1>
+<form action="#" method="post">
+    <p>Number of responces: <input type="text" value="{{num_responces}}" name="num_responces"></p>
+{% for if_mess, resp in responces.items(): %}
+    <p>If user says this: <input type="text" name="if_mess{{loop.index0}}" value="{{if_mess}}"></p>
+    <p>Then respond with this: <input type="text" name="resp{{loop.index0}}" value="{{resp}}"></p>
+{% endfor %}
+<button type="submit" name="Update" value="Update" class="button">Update</button>
+</form>
+{% endblock %}
