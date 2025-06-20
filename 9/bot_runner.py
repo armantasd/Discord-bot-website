@@ -1,4 +1,4 @@
-#test token (you wont nuke any servers tho) = "MTM4Mzc2MDcyMzQ3NzI3MDcyMA.GdcdNM.RHgZf_mVczJ0y5FpsDphMkeCs80yKTWIrYdgdw"
+#test token (you wont nuke any servers tho) = "no token lol"
 import discord, random, datetime
 from discord.ext import commands
 

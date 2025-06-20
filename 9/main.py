@@ -140,4 +140,10 @@ def config():
         return render_template("config.html", config=temp_dict)             
     return render_template("config.html", config=config)
 
+@app.route("/sources")
+def sources():
+    if Login_checker():
+        return redirect(url_for("login"))
+    return render_template("sources.html")
+
 app.run(debug=True)
